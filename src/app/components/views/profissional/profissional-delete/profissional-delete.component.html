@@ -1,0 +1,16 @@
+<form action="">
+    <h1>DELETANDO PROFISSIONAL</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="profissional.nome" type="text" name="nome" disabled>
+    </mat-form-field>
+    <mat-form-field class="form">
+        <mat-label>Colaborador</mat-label>
+        <input matInput [(ngModel)]="profissional.colaborador.nome" type="text" name="colaborador.nome" disabled>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" mat-stroked-button class="button mat-elevation-z8" color="primary">Deletar</button>
+        <button (click)="cancel()" mat-stroked-button class="button mat-elevation-z8" color="warn">Cancelar</button>
+    </div>
+</form>
